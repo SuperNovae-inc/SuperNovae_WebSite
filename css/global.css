@@ -1,0 +1,273 @@
+/**********************/ /*--/ GLOBAL TM /--*/ /**********************/
+/********************************************************************/
+* {
+  margin: 0; padding: 0;
+}
+body {
+  background-color: #0e275c;
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/********************** TYPO *************************/
+/*Import typo*/
+/*@import url('https://fonts.googleapis.com/css?family=Cabin:600|Oswald:300,400|Titillium+Web:300,400,700');
+*//*Oswald: 300 400 & Titillium Web: 300, 400, 700 & Cabin: 600; /*/
+
+/*Typo Style*/
+h1 {
+	font-family: 'Oswald', sans-serif;
+}
+
+* {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
+	color: #212121;
+}
+
+p {
+	font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+a{
+	color: rgba(0, 0, 0, 0);
+}
+
+/********************** LOAD ************************/
+.loader {
+    position : fixed;
+    z-index: 99999998;
+    top : 0px;
+    left : 0px;
+    height : 100%;
+    width : 100%;
+    /*cursor : wait;*/
+    background-color: #0E275C;
+}
+
+
+div.load_dad {
+	z-index: 99999999;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+	position: absolute;
+  top: 21%;
+}
+
+div.load_dad .load_gif {
+  width: 350px;
+  height: 350px;
+  cursor: wait;
+}
+
+
+/********************** VIDEO *************************/
+video.trailer_bg {
+  position: fixed;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  object-fit: cover;
+}
+video.particule_bg {
+  position: fixed;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  object-fit: cover;
+}
+#video_bg_cover {
+  position: fixed;
+  width: 100%; height: 100%;
+  /*background: url("../../assets/global/photo_bg.png") no-repeat;*/
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*titre intro*/
+div.element_middle{
+	z-index: 1000;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+	position: absolute;
+  top: 35%;
+}
+/*titre*/
+div.element_middle h1 {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fb248b;
+  text-shadow: 0 0 25px rgba(255, 26, 127, 0.5);
+  font-size: 8em;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.1;
+  letter-spacing: .025em;
+}
+
+
+/********************** X STAR *************************/
+.xstar {
+  z-index: 999;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  background-size: cover!important;
+  background-position: center!important;
+  right: -5%;
+  bottom: -5%;
+  width: 110%;
+  height: 110%;
+  opacity: .5;
+  background: url(../../assets/x.png) no-repeat;
+}
+
+/********************** PARRALAX STAR *************************/
+.prlx_space {
+  z-index: 100;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.prlx_space div{
+  z-index: 10;
+  position: absolute;
+  background-size: cover!important;
+  background-position: center!important;
+}
+.prlx_space div:nth-child(1){
+  right: -5%;
+  bottom: -5%;
+  width: 110%;
+  height: 110%;
+  opacity: .5;
+  background: url(../../assets/star_paralax/star_1.png) no-repeat;
+}
+.prlx_space div:nth-child(2){
+  left: -5%;
+  bottom: -5%;
+  width: 110%;
+  height: 110%;
+  opacity: .1;
+  background: url(../../assets/star_paralax/star_2.png) no-repeat;
+}
+.prlx_space div:nth-child(3){
+  left: -5%;
+  bottom: -5%;
+  width: 110%;
+  height: 110%;
+  opacity: .045;
+  background: url(../../assets/star_paralax/star_3.png) no-repeat;
+}
+.prlx_space div:nth-child(4){
+  left: -105%;
+  top: -120%;
+  width: 240%;
+  height: 240%;
+  opacity: .22;
+  background: url(../../assets/star_paralax/effect_1.png) no-repeat;
+}
+.prlx_space div:nth-child(5){
+  right: -105%;
+  bottom: -120%;
+  width: 200%;
+  height: 200%;
+  opacity: .12;
+  background: url(../../assets/star_paralax/effect_1.png) no-repeat;
+}
+
+/********************** PARRALAX *************************/
+@-o-keyframes prlx_pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes prlx_pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes prlx_pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes prlx_pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.prlx_pop {
+  opacity: 0;
+
+  -o-animation-duration: 5.5s;
+  -moz-animation-duration: 5.5s;
+  -webkit-animation-duration: 5.5s;
+  animation-duration: 5.5s;
+
+  -o-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+
+  -o-animation-name: prlx_pop;
+  -moz-animation-name: prlx_pop;
+  -webkit-animation-name: prlx_pop;
+  animation-name: prlx_pop;
+
+  -o-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}

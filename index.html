@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SuperNovae</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0" />
+
+        <!-- meta referencement -->
+        <meta name="content-language" content="fr"/>
+        <meta name="Description" content="SuperNovae"/>
+        <meta name="keywords" content="thibaut, melen, mln, thibaut melen, graphiste, designer, entrepreneur, 42, supernovae, supernova, inc, startup, nicolas, cella, pickomit, tnf, faninty, tournament fighters"/>
+        <meta name="subject" content="Supernovae Inc Startup"/>
+        <meta name="copyright" content="SuperNoave Copyright"/>
+        <meta name="Author" content="Thibaut Melen"/>
+        <meta name="identifier-url" content="http://thibaut-melen.supernovae-project.com/"/>
+
+        <!-- ***** FONT ***** -->
+        <link href="https://fonts.googleapis.com/css?family=Cabin:600|Oswald:300,400|Titillium+Web:300,400,700" rel="stylesheet">
+
+        <!-- ***** CSS UNIVERSAL ***** -->
+        <link type="text/css" rel="stylesheet" href="css/global.css"/>
+        <link type="text/css" rel="stylesheet" href="css/global_responsive.css"/>
+
+    </head>
+	<body>
+        <!-- ***** LOAD ***** -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $(".loader").fadeOut("1000");
+                $(".load_gif").fadeOut("800");
+                console.log("load");
+            })
+        </script>
+        <div class="load_dad">
+          <img class="load_gif"src="assets/intro.gif" alt="supernovae load">
+        </div>
+
+        <div class="loader"></div>
+        <!-- /end LOAD -->
+
+        <!-- ***** ELEMENT MIDDLE ***** -->
+        <div class="element_middle">
+            <h1 class="fadeInDown">SuperNovae</h1>
+        </div><!-- /end element_middle -->
+
+        <div class="xstar"></div>
+
+        <div class="prlx_space">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- ***** VIDEO  HOMEBG ***** -->
+        <div class="dady_videohome_bg">
+          <video class="trailer_bg"  preload="true" loop="" muted="" autoplay="" data-reactid="102" >
+            <source src="assets/video_bg.mp4" type="video/mp4" data-reactid="103">
+          </video><!-- /end trailer_bg -->
+        </div><!-- /end VIDEO HOME BG -->
+        <!-- /end VIDEO BG-->
+
+    <!--****************************************************** -->
+    <!-- ***** ********* PLUGIN ********* ***** -->
+    <!--****************************************************** -->
+
+    <!-- BIBLIOTEQUE -->
+    <script src="js/lib/jquery-3.1.1.js"></script>
+    <script src="js/lib/TweenMax.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        //PARALAX SCRIPT
+        $.fn.parallax = function ( resistance, mouse ){
+            $el = $( this );
+            TweenLite.to( $el, 0.2, {
+                x : -(( mouse.clientX - (window.innerWidth/2) ) / resistance ),
+                y : -(( mouse.clientY - (window.innerHeight/2) ) / resistance )});
+        };
+        //PARALAX ON PAGE
+        $( document ).mousemove( function( e ) {
+          $( '.element_middle' ).parallax( +80, e );
+
+          $( '.prlx_space div:nth-child(1)' ).parallax( -70, e );
+          $( '.prlx_space div:nth-child(2)' ).parallax( 100, e );
+          $( '.prlx_space div:nth-child(3)' ).parallax( 80, e );
+
+        });
+
+     });//END READY
+    </script>
+
+
+    <!-- AUDIO -->
+    <!-- <audio autoplay src=""></audio> -->
+
+
+    <!-- ***********************************************************************************
+    *********************************THIBAUT MELEN******************************************* -->
+
+	</body>
+</html>
